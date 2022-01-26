@@ -1,0 +1,1416 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Jaldi', sans-serif;
+}
+
+/*    ------------------------ parmnemt style--------------------------------  */
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35,85);
+}
+span{
+    font-size: .9rem;
+    color: #757373;
+}
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+              /*------------------------------- naigation-------------------------- */
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.15);
+    z-index: 999;
+
+}
+nav img {
+    width: 150px;
+    cursor: pointer;
+      
+}
+nav .navigation{
+    display: flex;
+}
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21 21 100);
+    font-size: 20px;
+    font-weight: 600;
+    transition: .4sec ease;
+}
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover{
+    color: rgb(255, 46, 99);
+    
+}
+#menu-button{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+#menu-close{
+    display: none;
+}
+
+
+/*--------------------------------- home---------------- */
+#home{ 
+    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url("images/house-1867187_960_720.webp");  
+    width:100%;
+    height: 110vh;
+    background-size: cover; 
+     background-position: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+#home h2{
+    color:rgb(225, 241, 217);
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+}
+#home p{
+    width: 50%;
+    color:white;
+    font-size: 1rem;
+    line-height: 25px;
+    color: #fff;
+    word-spacing: 1px;
+}
+#home .btn{
+    margin-top: 30px;
+
+}
+#home .btn a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 13px 35px;
+    background-color: rgb(195, 192, 192);
+    font-weight: 800;
+    border-radius: 5px;
+}
+#home .btn a.blue{
+    background: white;
+    transition: 0.5s ease;
+}
+#home .btn a.blue:hover{
+    color: rgb(21, 21,100);
+    background-color: rgb(221, 198, 68);
+}
+
+#home a.yellow{
+    color: white;
+    background-color: rgb(21, 21,100);
+    transition: 0.5s ease;
+}
+#home a.yellow:hover{
+    color: rgb(21, 21,100);
+    background-color: rgb(221, 198, 68);
+}
+
+
+  
+/*----------------------------------------- featuers------------------------------------*/
+
+
+
+
+#featuers {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+#featuers .fea-base{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+grid-gap: 1rem;
+margin-top: 30px;
+}
+#featuers .fea-box{
+    background-color: #f9f9ff;
+    text-align: start;
+}
+#featuers .fea-box i{
+    font-size: 2.3rem;
+    color: rgb(44, 44,80);
+}
+#featuers .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(44, 44,59);
+    padding: 13px 0px 7px 0px;
+}
+#featuers .fea-box p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(70, 70, 87);
+}
+
+
+
+      /*------------------------ course------------------------------ */
+
+#course{
+    padding: 7vw;
+    text-align: center;
+}
+#course .course-box{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+grid-gap: 1rem;
+margin-top: 30px;
+
+}
+
+#course .cources{
+    text-align: start;
+    background-color: #f9f9ff;
+    height: 100%;
+    position: relative;
+    transition: .7s ease;
+}
+#course .cources:hover{
+    background-color:black;
+    color: #fff;
+}
+#course .cources img{
+
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0;
+    transition: 0.5s;
+}
+#course .cources img:hover {
+top: -10px;
+}
+#course .cources .details{
+    padding: 15px 15px 0 15px;
+}
+#course .cources .details i{
+    color: rgb(240, 243, 41);
+    font-size: 1rem;
+}
+#course .cources .cost{
+    background-color: rgb(74,74, 136);
+    color: #fff;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+    right: -1px;
+}
+
+
+
+/*-------------------------------------- registration----------------------------------- */
+
+/* #registration{ */
+    /* padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)), url("images/signup.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; */
+    #registration {
+        padding: 6vw 8vw 6vw 8vw;
+        background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)), url("images/signup.jpg");
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+    }
+
+#registration .reminder{
+
+    color: #fff;
+}
+#registration .reminder h1{
+
+    color: #fff;
+}
+#registration .reminder .time{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#registration .reminder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(153, 159, 216, 0.37);
+    margin: 0px 5px 10px 5px;
+    border-radius: 10px;
+    border : 2px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.rem;
+    font-weight: 600;
+}
+
+#registration .form{
+    margin-top: 20px;
+    align-self: center;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 10px 40px 0 rgb(175, 14, 219);
+
+}
+#registration .form input{
+    border: none;
+    margin: 15px 0px;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(81,91,233,0.5);
+    outline: none;
+}
+#button{
+    text-align: center;
+    margin-top: 10px;
+}
+#registration .btn a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 6px;
+    transition: ease;
+}
+
+#registration .form .yellow{
+    color: rgb(218, 20, 20);
+    background-color: rgb(221, 198, 68);
+}
+#registration .form .yellow:hover{
+    color: rgb(21, 21,100);
+    background-color: rgb(240, 225, 205);
+}
+
+
+
+
+/*---------------------------------- expertes?------------------------------------ */
+
+#experts{
+    padding: 7vw;
+    text-align: center;
+}
+.profile h4{
+    color: #f608cf;
+}
+#experts .expert-box{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+grid-gap: 1rem;
+margin-top: 30px;
+}
+#experts .expert-box .profile{
+    background-color: #fafaf1;
+    padding: 30px 10px;
+    position: relative;
+    top: 0;
+    transition: top ease 1s;
+}
+#experts .expert-box .profile:hover{
+    background-color: black;
+    color: rgb(197, 193, 193);
+    top: -5px;
+}
+.pro-links{
+   margin-top: 10px;
+}
+.pro-links i {
+    padding: 10px 13px;
+    border: 1px solid rgb(21, 21,100);
+    cursor: pointer;
+    transition: 0.4sec ease;
+}
+.pro-links i:hover{
+    background-color: rgb(253, 13, 13);
+    color: #fff;
+    border: 1px solid rgb(21, 21,100);
+    cursor: pointer;
+}
+
+
+
+/* ---------------------------------footer--------------------------- */
+
+footer{
+  padding: 8vw;
+  background-color:#101C32;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+footer .footer-col{
+    padding-bottom: 40px;
+}
+footer h2{
+    color: rgb(241, 240, 245);
+    font-weight: 800;
+    padding-bottom: 20px;
+
+}
+footer li{
+list-style: none;
+color:#7b838a;
+padding: 10px 0px;
+font-size: 15px;
+cursor: pointer;
+transition: 0.3s ease;
+}
+footer li:hover{
+    color: rgb(241, 240, 245);
+}
+footer p{
+    color: #7b838a;
+
+}
+footer .subcribe{
+    margin-top: 20px;
+}
+footer input{
+    width: 220px;
+    padding: 16px 12px;
+    background: #334f6c;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+footer .subcribe a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    padding-bottom: 12px;
+    background-color: rgb(195, 192, 192);
+    font-weight: 800;
+
+}
+footer .subcribe a.yellow{
+    color: #fff;
+    background: #fdc938;
+    transition: 0.3s ease;
+
+}
+footer .subcribe a.yellow:hover{
+    color: rgb(21, 21,100);
+    background: #fff;
+}
+footer .copywrite{
+margin-top: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+flex-wrap: wrap;
+}
+footer .copywrite p{
+    color: #fff;
+}
+
+footer .copywrite .pro-links{
+    margin-top: 0px;
+ }
+ footer .copywrite .pro-links i {
+    background-color: #5f7185;
+    color: #fff;
+    transition: 0.3s ease;
+ }
+ footer .copywrite .pro-links i:hover{
+    background-color: #fdc938;
+    color: #fff;
+ }
+
+
+
+
+    /* ------------------------------   ABOUT US    --------------------------- */
+    #About-home{
+        background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url("images/back1.jpg");
+    width:100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    }
+
+    #About-home h2{
+        color:rgb(225, 241, 217);
+        font-size: 3.2rem;
+        letter-spacing: 1px;
+    }
+
+    /* -------------------------about-contaner------------------- */
+
+
+    #about-contaner{
+        display: flex;
+        align-items: center;
+        padding: 8vw 8vw 2vw 8vw;
+    }
+    #about-contaner .about-img{
+        width: 60%;
+    }
+    #about-contaner .about-img img{
+        width: 100%;
+        padding-right: 60px;
+    }
+    #about-contaner .about-text{
+        width: 40%;
+    }
+    #about-contaner .about-text h2{
+        color: #292938;
+        padding-bottom: 15px;
+    }
+    #about-contaner .about-text p{
+        color:#686f7a;
+       font-weight: 600;
+    }
+    #about-contaner .about-text .abut-fe{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    #about-contaner .about-text .abut-fe img{
+        width: 50px;
+        background-size: cover;
+        background-position: center;
+        margin-right: 20px;
+    }
+    #about-contaner .about-text .abut-fe .fe-text{
+        width: 90%;
+    }
+
+    #about-contaner .about-text .abut-fe .fe-text h3{
+        font-size: 16px;
+        color: #292938;
+    }
+
+
+
+
+
+
+
+    /*---------------------------- trust------------------------------- */
+
+
+    #trust{
+        text-align: center;
+        padding: 8vw;
+    }
+    #trust p{
+        margin-top: 8px;
+    }
+    #trust .trust-img{
+        margin: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+    #trust .trust-img img{
+        width: 90px;
+        height: auto;
+    }  
+
+
+
+
+
+
+
+
+/*------------------------------ BLog--------------------------------- */
+
+
+#blog-contanier{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8vw;
+}
+#blog-contanier .blogs{
+    width: 60%;
+}
+#blog-contanier .blogs img{
+    width: 100%;
+    border-radius: 90px;
+}
+ 
+#blog-contanier .cata{ 
+    width: 30%;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    border: 2px solid rgb(226, 223, 223);
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: 0 3px 30px 0 rgb(175, 14, 219);
+}
+#blog-contanier .cata h2{
+    color: rgb(21, 21, 100);
+    font-size: 30px;
+    text-align: center;
+}
+    #blog-contanier .cata a{
+     padding-left: 10px;
+    color: rgb(16, 13, 221);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 45px;
+    }
+    #blog-contanier .cata a:hover{
+        color: rgb(255, 46, 99);
+    }
+
+
+#blog-contanier .blogs .post{
+    padding-bottom: 60px;
+}
+#blog-contanier .blogs .post h3{
+    color: #29303b;
+    padding: 15px 0 10px 0px;
+
+}
+#blog-contanier .blogs .post p{
+    color: #757373;
+    padding-bottom: 15px;
+}
+#read-more{
+    margin-top: 10px;
+}
+
+
+#blog-contanier .blogs .post a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(21, 21, 100);
+    color: #fff;
+    padding: 13px 35px;
+    transition: .4s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+#blog-contanier .blogs .post a:hover{
+    
+    background-color: white;
+    color: black;
+    border:1px solid red;
+}
+   
+#blog-contanier .cata h2{
+padding-bottom: 7px;
+
+}
+
+            /* ----------------Blog posts ------------ */
+
+            #blog-contanier .blog-post{
+                width: 80%;
+                margin: 0 auto;
+            }
+            #blog-contanier .blog-post img{
+                width: 100%;
+                border-radius: 90px;
+            }
+            #blog-contanier .blog-post h3{
+                font-size: 30px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+            #blog-contanier .blog-post p{
+                font-size: 1rem;
+                text-align: justify;
+                line-height: 30px;
+            }
+
+            
+            /* ----button for blogs ----*/
+
+
+            
+             #in-out-btn{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-top: 20px;
+                
+            }
+            #in-out-btn .btn{
+                padding: 0px 20px;
+                border-radius: 10px;
+            }
+            
+            #blog-contanier .blog-post a{
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 600;
+                background-color: rgb(104, 87, 3);
+                color: #fff;
+                padding: 13px 35px;
+                transition: 0.5s ease ;
+                text-transform: uppercase;
+            }
+            #blog-contanier .blog-post a:hover{
+                background-color: #fff;
+                color: black;
+                border: 1px solid red ;
+            }
+            
+
+            /*------------- Course detals web and--------------- all */
+
+
+            #course-details{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                padding: 8vw;
+            }
+            #course-details .overview {
+                width: 60%;
+            }
+            /* #course-details .enroll{
+             width: 30%;
+            } */
+            #course-details h3{
+                padding: 30px 0px 20px 0px;
+                color: #29303b;
+            }
+            #course-details p {
+                color: #64626e;
+                text-align: justify;
+                margin-top: 5px;
+            }
+            #course-details hr{
+                height: 1px;
+                margin-top: 40px;
+                background-color: rgba(236,236,229,0.5);
+           }
+
+            #course-details .overview .course-image{
+                width: 100%;
+                height: 60vh;
+                object-fit: cover; 
+                border-radius: 12px;
+                margin-bottom: 20px;
+            }
+
+             #course-details .overview .course-head{
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            } 
+            #course-details .overview .course-head .c-name{
+                width: 70%;
+            }
+            #course-details .overview .course-head .c-name h2{
+                color: #29303b;
+            }
+            #course-details .overview .course-head .c-name .star{
+                margin: 6px 0px;
+            }
+            #course-details .overview .course-head .c-name .star i {
+                color: rgb(240, 243, 41);
+                font-size: 0.9rem;            
+            }
+            #course-details .overview .course-head .c-name p{
+                font-size: 15px;
+            }
+            #course-details .overview .course-head span{
+                background-color: rgba(101, 70, 255, 0.3);
+                padding: 16px 25px;
+                font-size: 19px;
+                font-weight: 700;
+                color: #c90cf8;
+                border-radius: 5px;
+            }
+
+            #course-details .learn p{
+                font: 15px;
+                padding-bottom: 15px;
+            }
+            #course-details .learn p i{
+                color: #654ec4;
+                font-weight: 800;
+                margin-right: 17px ;
+            }
+
+            #course-details .tutor{
+                display: flex;
+            }
+            #course-details .tutor img{
+                width: 70px;
+                height: 70px;
+                border-radius: 50px;
+                margin-right: 20px;
+            }
+            #course-details .tutor h5{
+                font-size: 15px;
+            }
+            #course-details .enroll{
+                width: 300px;
+                padding: 0px 30px 30px 30px;
+                border-radius: 11px;
+                box-shadow: 0px 20px 40px 0px rgba(11 2 55 / 15%);
+            }
+            .enroll h3{
+                padding-bottom: 10px;
+            }
+            .enroll p{
+                font-size: 15px;
+                color: #64626e;
+                margin: 15px 0px;
+            }
+            #course-details .enroll p i{
+                color: #654ec4;
+                font-weight: 600;
+                margin-right: 18px;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                text-align: center;
+            }
+            #course-details .enroll .enroll-button{
+                padding: 25px 0px 30px 0;
+                margin: auto;
+                text-align: center;
+            }
+            #course-details .enroll .enroll-button a{
+                text-decoration: none;
+                font-size: 1rem;
+                padding: 13px 45px;
+                border-radius: 5px;
+                font-weight: 600;
+                color: #fff;
+                background-color: rgb(50 50 136);
+                transition: 0.6s ease;
+            }
+            #course-details .enroll .enroll-button a:hover{
+                color: rgb(31, 31, 31);
+                background-color:rgb(180, 248, 149);
+            }
+
+
+
+
+
+                    /*----------------- contact us-------------- */
+
+#contact{
+    padding: 8vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+#contact .get-in{
+    width: 350px;
+}
+#contact .get-in h2{
+    color:#2c234d ;
+    font: 30px;
+    font-weight: 800;
+    line-height: .8;
+    margin-bottom: 16px;
+}
+#contact .get-in p{
+    color:#686875;
+    line-height:24px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #e5e4ed ;
+}
+#contact .get-in h3{
+    color:#2c234d ;
+    font: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+#contact .get-in .get-in-details div{
+                 display: flex;
+}
+#contact .get-in .get-in-details div .get {
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 15px;
+    color: #5858fc;
+}
+
+#contact .get-in .get-in-details .pro-links i{
+    margin-right: 8px;
+    transition: 0.4s ease;
+}
+    
+#contact .get-in .get-in-details .pro-links i:hover{
+    border-radius: 50%;
+    background: rgb(27, 27, 92);
+    color: rgb(225, 241, 217);
+
+    
+}
+label {
+    cursor: default;
+    padding-left: 20px;
+}
+.GENDER_F{
+    margin-left: 150px;
+}
+#contact .form{
+    width: 60%;
+    background: #f7f6fa;
+    padding: 40px;
+    border-radius: 10px;
+}
+#contact .form h4{
+    color: #2c234d;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+#contact .form p{
+    color:#686875;
+    line-height:24px;
+    padding-bottom: 25px;
+}
+#contact .form .form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#contact .form .form-row input{
+    width: 40%;
+    font-size: 14px;
+    font-weight:400;
+    border-radius: 3px;
+    border:none;
+    background: #fff;
+    color: #7e7c87;
+    outline: none;
+    padding:20px 30px ;
+    margin-bottom: 20px;
+    
+}
+#contact .form .form-col input, #contact .form .form-col textarea{
+    width: 100%;
+    font-size: 14px;
+    font-weight:400;
+    border-radius: 3px;
+    border:none;
+    background: #fff;
+    color: #7e7c87;
+    outline: none;
+    padding:20px 30px ;
+    margin-bottom: 20px;
+    
+}
+#contact .form button{
+    font-size: 1rem;
+    background: rgb(21, 21, 100);
+    color: #fff;
+    padding: 13px 25px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight:600px; 
+    cursor: pointer;
+    transition: .5s ease;
+}
+#contact .form button:hover{
+    background: rgb(245, 245, 251);
+    color: rgb(0, 0, 0);
+    border: 1px solid green;
+    font-weight: 500;
+    
+}
+#map{
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 8vw;
+}
+#map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+            
+/* ----------------------------RSPONCIVE----------------------------- */
+
+ 
+@media (max-width: 883px){
+    #registration {
+        padding: 3vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    /* --------------ABOUT?--------------- */
+    #about-contaner {
+        padding: 4vw 5vw 2vw 5vw;
+    }
+    #trust {
+        padding: 8vw 0vw;
+    }
+    #trust .trust-img img {        
+        padding-right: 20px;
+    }
+
+
+    /* bloog.. */
+
+
+    #blog-contanier .cata {
+        width: 35%;
+    }
+
+    /*---------- blog posts ------/ */
+
+
+    #blog-contanier .blog-post{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* -------------cources detals page--------- */
+
+
+    #course-details {
+        padding: 3vw;
+    }
+
+              /* contact us  */
+#contact {
+    padding: 8vw 4vw;
+
+}
+#contact .form {
+    width: 56%;
+
+ }
+ #contact .form .form-row input {
+    width: 100%;
+}
+ #contact .form .form-row {
+    flex-direction: column;
+}
+.GENDER_F {
+    margin-left: 0px;
+}
+ }
+
+
+ @media (max-width:690px)      /*   for --------------ABOUT?--------------- */
+ {
+     #about-contaner .about-text h2 {
+         font-size: 20px;
+     }
+     #about-contaner .about-text p {
+         font-size: 13px;
+     }
+     #trust .trust-img {
+         margin: 35px;
+     }
+ }
+
+
+
+ @media (max-width: 660px){
+    #menu-button{
+     
+        display: initial;
+        margin-right: 20px;
+    }
+    #menu-close{
+        display: initial;
+        font-size: 1.6rem;
+         color: #fff;
+        padding: 10px 20px 8px 20px;
+    }
+    
+    nav .navigation ul {
+        position: absolute;
+        top: 0;
+        right: -180px;
+        width: 180px;
+        height: 100vh;
+        background:rgba(17, 20, 104, 0.45) ;
+        backdrop-filter:blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    nav .navigation ul.active{
+        right: 0px;
+        transition:1.5s ease;
+    }
+    nav .navigation ul li{
+        padding: 12px 20px;
+        margin-left: 0px;
+    }
+    nav .navigation ul li a{
+        
+        color: lightcoral;
+        padding: 10px 15px;
+        text-align: center;
+        border: none;
+    }
+    nav .navigation ul li a:hover{
+        color: rgb(0, 0, 0);
+        background-color: rgb(248, 245, 245);
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+/* ABOUT? */
+#about-contaner .about-img img {
+    padding-right: 46px;
+}
+#trust .trust-img {
+
+    align-items: center;
+}
+#trust .trust-img img {
+    padding-top: 10px;
+}
+
+/*---------------------------- BLOG------------------ */
+#blog-contanier {
+    padding: 3vw;
+}
+
+#blog-contanier .cata {
+    width: 35%;
+}
+
+/*---------- blog posts ------/ */
+#blog-contanier .blog-post{
+    width: 90%;
+    margin: 0 auto;
+}
+/* -------------cources detals page--------- */
+#course-details {
+    flex-direction: column;
+    padding-top: 30px;
+}
+#course-details .overview {
+    width: 100%;
+}
+                  
+             /*--------- contact us------------- */
+             
+             #contact .get-in {
+                width: 260px;
+            }
+            #contact .form {
+                width: 50%;
+            }
+            #contact {
+                padding: 8vw 2vw;
+            }
+
+        }
+     
+        
+
+
+        @media (max-width:570px){
+            #about-contaner .about-text h2 {
+                width: 100%;
+                font-size: 18px;
+            }
+            #about-contaner .about-text p {
+                font-size: 12px;
+            }
+            #about-contaner .about-text .abut-fe .fe-text h3 {
+                font-size: 13px;
+            }
+            #about-contaner .about-img img {
+                padding-right: 17px;
+            }
+            #about-contaner .about-text{
+                width: 100%;
+            }
+            #featuers .fea-base {
+                grid-template-columns: repeat(auto-fit, minmax(274px,1fr));
+            }
+            #course .course-box {
+               
+                grid-template-columns: repeat(auto-fit, minmax(274px,1fr));
+               
+            }
+        
+                       /* -----------Blog */
+                       #blog-contanier {
+                        padding: 2vw;
+                        justify-content: space-around;
+                        flex-direction: column-reverse;
+                        padding: px 0px;
+                        align-items: center;
+                    }
+                    #blog-contanier .cata {
+                        width: 70%;
+                        text-align: center;
+                        margin-bottom: 40px;
+                    }
+                    #blog-contanier .blogs {
+                        width: 90%;
+                    }
+                    /* blog post  */
+                    #blog-contanier .blog-post p {
+                        padding: 0px 10px;
+                    }
+                    
+                    /* ------------contact us---------- */
+                    #contact .get-in p {
+                        font-size: 15px;
+                    }
+                    #contact .form p {
+                        font-size: 15px;
+                    }
+        }
+
+
+
+        @media (max-width: 450px){
+            footer input {
+          margin-bottom:20px;
+        }
+        #registration .form {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+                     /*-------------- about?--------------- */
+        
+        #about-contaner {
+                 display: flex;
+                 flex-direction: column-reverse;
+                    }
+                    #about-contaner .about-img {
+                        width: 100%;
+                    }
+        
+                    /* -----------blog ....... */
+                    #blog-contanier .cata {
+                        width: 85%;
+                    }
+                     /*---------- blog posts ------/ */
+            #blog-contanier .blog-post{
+                width: 90%;
+                margin: 0 auto;
+            }
+            #blog-contanier .blog-post p {
+                padding: 0px 10px;
+            }
+            /*======================== blog butoon */
+            #in-out-btn {
+                margin: 20px 1px;
+            }
+        
+            #contact .form {
+                width: 45%;
+                padding: 40px 15px;
+               
+            }
+            #contact .get-in {
+                width: 50%;
+            }
+        
+             /* contact us -- */
+                  
+             #contact {
+                flex-direction: column;
+            } 
+            #contact .get-in {
+                width: 90%;
+                margin-left: 15px;
+            }
+        
+            #contact .form {
+                width: 90%;
+                margin-left: 15px;
+                margin-top: 30px;
+            }
+        
+         }
+
+
+         @media (max-width: 362px){
+            #home p {
+                width: 100%;
+                font-size: 1.3rem;
+            }
+            #home .btn {
+                display: flex;
+                flex-direction: column;
+            }
+            #home .btn a.blue {
+                margin-bottom: 15px;
+            }
+            footer input {
+                margin-bottom:20px;
+            }
+            #featuers {
+                padding: 5px;
+                text-align: center;
+            }
+            #featuers p{
+                font-size: 1rem;
+            }
+            #registration .form {
+                margin-left: 12px;
+            } 
+            /*---------- blog posts ------/ */
+            #blog-contanier .blog-post{
+                width: 90%;
+                margin: 0 auto;
+            }  
+        
+            #blog-contanier .blog-post a {
+                color: #fff;
+                padding: 10px;
+                
+            }
+            #About-home h2 {
+                
+                font-size: 2.2rem;
+            }  
+                /* coure details page */
+                #course-details .enroll {
+                    box-shadow: 0px 20px 40px 0px rgba(11 2 55 / 15%);
+                }
+                #course-details p {
+                    font-size: small;
+                }
+        }
+
+        @media (max-width: 288px){
+            /* home--sectiom */
+            #home h2 {
+               
+                font-size: 2rem;
+            }
+            #home p {
+                font-size: 1;
+            }
+            #registration .form {
+                padding: 15px;
+                box-shadow: 0 10px 4px 0 rgb(175 14 219);
+            }
+            
+            /* for input #blog */
+            footer input {
+                width: 160px;
+         
+           }
+           #blog-contanier .cata a {
+            padding-left: 5px;
+            font-size: 0.9rem;
+        }
+        #blog-contanier .cata h2 {
+            font-size: 21px;
+          
+        }
+        /*---------- blog posts ------/ */
+        #blog-contanier .blog-post{
+            width: 90%;
+            margin: 0 auto;
+        }
+        #About-home h2 {
+            font-size: 2.2rem;
+        }
+        #blog-contanier .blog-post h3 {
+            font-size: 24px;
+        }
+                               /*------------------------- cousre ------------- */
+         #course .course-box {
+        grid-template-columns: repeat(auto-fit, minmax(261px,1fr));
+                                    
+        }
+        #course-details p {
+            
+             text-align: none; 
+        }
+             #course-details .overview .course-image {
+                margin-left: 10px;
+            }
+        #contact .get-in {
+            width: 90%;
+        }
+        #contact {
+            flex-direction: column;
+        }
+                 
+        /* contact us  */
+        #contact .get-in p {
+            font-size: 12px;
+        }
+        #contact .get-in .form {
+            font-size: 12px;
+        }
+        #in-out-btn .btn1 {
+            margin-bottom: 30px;
+        }
+    }
+    
+        
